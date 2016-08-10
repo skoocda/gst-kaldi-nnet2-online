@@ -1039,7 +1039,7 @@ static std::vector<NBestResult> gst_kaldinnet2onlinedecoder_nbest_results(
       word_in_hyp.word_id = words[j];
       nbest_result.words.push_back(word_in_hyp);
     }
-    if (i == 0) {
+    if (true){ //(i == 0) {
       if (filter->do_phone_alignment) {
         nbest_result.phone_alignment =
             gst_kaldinnet2onlinedecoder_phone_alignment(filter, alignment);
